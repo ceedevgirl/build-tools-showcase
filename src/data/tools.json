@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Webpack",
+    "category": "Bundler",
+    "description": "A powerful module bundler that bundles JavaScript files for usage in a browser.",
+    "icon": "cube-outline",
+    "link": "https://webpack.js.org"
+  },
+  {
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A typed superset of JavaScript that compiles to plain JavaScript.",
+    "icon": "logo-typescript",
+    "link": "https://www.typescriptlang.org/docs/"
+  },
+  {
+    "name": "Sass",
+    "category": "CSS Preprocessor",
+    "description": "CSS with superpowers. Sass is the most mature, stable, and powerful professional grade CSS extension language.",
+    "icon": "logo-sass",
+    "link": "https://sass-lang.com/documentation/"
+  },
+  {
+    "name": "ESLint",
+    "category": "Linter",
+    "description": "Find and fix problems in your JavaScript code. ESLint statically analyzes your code to quickly find problems.",
+    "icon": "checkmark-circle-outline",
+    "link": "https://eslint.org/docs/latest/"
+  },
+  {
+    "name": "Babel",
+    "description": "A JavaScript compiler that lets you use next generation JavaScript",
+    "category": "Build Tools",
+    "icon": "checkmark-circle-outline",
+    "link": "https://babeljs.io/"
+  },
+  {"name": "Jest",
+    "description": "A delightful JavaScript testing framework with a focus on simplicity",
+    "category": "Testing",
+    "icon": "checkmark-circle-outline",
+    "link": "https://jestjs.io/"
+  },
+  { "name": "Husky",
+    "description": "Modern native git hooks made easy",
+    "category": "Git Hooks",
+     "icon": "checkmark-circle-outline",
+    "link":"https://typicode.github.io/husky/"
+   
+  },
+  {
+    "name": "Prettier",
+    "description": "An opinionated code formatter that supports many languages",
+    "category": "Code Quality",
+     "icon": "checkmark-circle-outline",
+    "link": "https://prettier.io/"
+  }
+]
