@@ -1,50 +1,50 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.ts',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  devServer: {
-    static: path.join(__dirname, 'dist'),
-    compress: true,
-    port: 8020,
+  resolve: {
+    extensions: ['.ts', '.js'],
   },
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
+        test: /\.ts$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-        exclude: /node_modules/,
-      },
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-        include: [/node_modules\/ionicons/],
-      },
-      {
-        test: /\.svg$/,
-        type: 'asset/resource',
-        include: [/node_modules\/ionicons/],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
     ],
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
-  },
-  devtool: 'source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
+      inject: 'body',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
     }),
   ],
+  optimization: {
+    splitChunks: false, // Disable code splitting
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false, // Prevent generation of LICENSE.txt files
+      }),
+      new CssMinimizerPlugin(),
+    ],
+  },
 };

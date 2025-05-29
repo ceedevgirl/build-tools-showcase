@@ -2,7 +2,7 @@ import './style.scss';
 import toolsData from './data/tools.json';
 import { Tool } from './model/types';
 import '@ionic/core';
-import 'ionicons/icons';
+
 
 import {
   toggleBookmark,
