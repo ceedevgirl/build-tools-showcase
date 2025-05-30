@@ -3,7 +3,6 @@ import toolsData from './data/tools.json';
 import { Tool } from './model/types';
 import '@ionic/core';
 
-
 import {
   toggleBookmark,
   showToolInfo,
@@ -86,18 +85,26 @@ function renderTools(tools: Tool[]): void {
 
   // Attach event listeners for action buttons
   document.querySelectorAll('.bookmark-btn').forEach((btn: Element) => {
-    btn.addEventListener('click', () => toggleBookmark(btn.getAttribute('data-tool') || ''));
+    btn.addEventListener('click', () =>
+      toggleBookmark(btn.getAttribute('data-tool') || '')
+    );
   });
   document.querySelectorAll('.info-btn').forEach((btn: Element) => {
-    btn.addEventListener('click', () => showToolInfo(btn.getAttribute('data-tool') || ''));
+    btn.addEventListener('click', () =>
+      showToolInfo(btn.getAttribute('data-tool') || '')
+    );
   });
   document.querySelectorAll('.try-btn').forEach((btn: Element) => {
-    btn.addEventListener('click', () => tryTool(btn.getAttribute('data-tool') || ''));
+    btn.addEventListener('click', () =>
+      tryTool(btn.getAttribute('data-tool') || '')
+    );
   });
 }
 
 function initializeThemeToggle(): void {
-  const themeToggle: HTMLButtonElement | null = document.getElementById('theme-toggle') as HTMLButtonElement;
+  const themeToggle: HTMLButtonElement | null = document.getElementById(
+    'theme-toggle'
+  ) as HTMLButtonElement;
   const themeIcon: HTMLElement | null = themeToggle?.querySelector('ion-icon');
   const themeText: HTMLSpanElement | null = themeToggle?.querySelector('span');
   let isDark: boolean = false;
@@ -106,11 +113,13 @@ function initializeThemeToggle(): void {
     themeToggle.addEventListener('click', () => {
       isDark = !isDark;
       if (isDark) {
-        document.body.style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)';
+        document.body.style.background =
+          'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)';
         themeIcon.setAttribute('name', 'sunny-outline');
         themeText.textContent = 'Dark Mode';
       } else {
-        document.body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        document.body.style.background =
+          'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
         themeIcon.setAttribute('name', 'contrast-outline');
         themeText.textContent = 'Light Mode';
       }
@@ -119,7 +128,8 @@ function initializeThemeToggle(): void {
 }
 
 function initializeCardAnimations(): void {
-  const cards: NodeListOf<HTMLElement> = document.querySelectorAll('.tool-card');
+  const cards: NodeListOf<HTMLElement> =
+    document.querySelectorAll('.tool-card');
   cards.forEach((card: HTMLElement) => {
     card.addEventListener('mouseenter', () => {
       card.style.transform = 'translateY(-5px) scale(1.02)';
@@ -131,7 +141,8 @@ function initializeCardAnimations(): void {
 }
 
 function initializePreviewControls(): void {
-  const buttons: NodeListOf<HTMLElement> = document.querySelectorAll('.control-btn');
+  const buttons: NodeListOf<HTMLElement> =
+    document.querySelectorAll('.control-btn');
   buttons.forEach((btn: HTMLElement) => {
     btn.addEventListener('click', () => {
       btn.style.transform = 'scale(0.95)';

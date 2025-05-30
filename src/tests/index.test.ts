@@ -12,7 +12,10 @@ describe('tryTool and showToolInfo', () => {
 
   it('opens the correct URL for Webpack', () => {
     tryTool('Webpack');
-    expect(window.open).toHaveBeenCalledWith('https://webpack.js.org', '_blank');
+    expect(window.open).toHaveBeenCalledWith(
+      'https://webpack.js.org',
+      '_blank'
+    );
   });
 
   it('opens a fallback URL for unknown tools', () => {
@@ -60,7 +63,10 @@ describe('loadBookmarks', () => {
 describe('tryTool', () => {
   it('opens the correct URL for Webpack', () => {
     tryTool('Webpack');
-    expect(window.open).toHaveBeenCalledWith('https://webpack.js.org', '_blank');
+    expect(window.open).toHaveBeenCalledWith(
+      'https://webpack.js.org',
+      '_blank'
+    );
   });
 
   it('opens a fallback URL for unknown tools', () => {

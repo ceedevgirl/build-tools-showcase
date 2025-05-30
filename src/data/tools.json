@@ -34,24 +34,25 @@
     "icon": "checkmark-circle-outline",
     "link": "https://babeljs.io/"
   },
-  {"name": "Jest",
+  {
+    "name": "Jest",
     "description": "A delightful JavaScript testing framework with a focus on simplicity",
     "category": "Testing",
     "icon": "checkmark-circle-outline",
     "link": "https://jestjs.io/"
   },
-  { "name": "Husky",
+  {
+    "name": "Husky",
     "description": "Modern native git hooks made easy",
     "category": "Git Hooks",
-     "icon": "checkmark-circle-outline",
-    "link":"https://typicode.github.io/husky/"
-   
+    "icon": "checkmark-circle-outline",
+    "link": "https://typicode.github.io/husky/"
   },
   {
     "name": "Prettier",
     "description": "An opinionated code formatter that supports many languages",
     "category": "Code Quality",
-     "icon": "checkmark-circle-outline",
+    "icon": "checkmark-circle-outline",
     "link": "https://prettier.io/"
   }
 ]
