@@ -1,0 +1,5 @@
+"use strict";(self.webpackChunkbuild_tool_showcase=self.webpackChunkbuild_tool_showcase||[]).push([[6875,8186,9256],{6875:(t,e,r)=>{r.r(e),r.d(e,{createSwipeBackGesture:()=>u});var n=r(4611),i=r(8186),o=r(7846),u=(r(6029),r(1637),function(t,e,r,u,a){var c=t.ownerDocument.defaultView,d=(0,i.i)(t),s=function(t){return d?-t.deltaX:t.deltaX},l=function(t){return d?-t.velocityX:t.velocityX};return(0,o.createGesture)({el:t,gestureName:"goback-swipe",gesturePriority:101,threshold:10,canStart:function(r){return d=(0,i.i)(t),function(t){var e=t.startX;return d?e>=c.innerWidth-50:e<=50}(r)&&e()},onStart:r,onMove:function(t){var e=s(t)/c.innerWidth;u(e)},onEnd:function(t){var e=s(t),r=c.innerWidth,i=e/r,o=l(t),u=o>=0&&(o>.2||e>r/2),d=(u?1-i:i)*r,f=0;if(d>5){var h=d/Math.abs(o);f=Math.min(h,540)}a(u,i<=0?.01:(0,n.j)(0,i,.9999),f)}})})},8186:(t,e,r)=>{r.r(e),r.d(e,{i:()=>n});
+/*!
+ * (C) Ionic http://ionicframework.com - MIT License
+ */
+var n=function(t){return t&&""!==t.dir?"rtl"===t.dir.toLowerCase():"rtl"===(null===document||void 0===document?void 0:document.dir.toLowerCase())}}}]);
