@@ -4,31 +4,40 @@ import { Tool } from './model/types';
 import '@ionic/core';
 import { addIcons } from 'ionicons';
 import {
-  constructOutline,
-  cubeOutline,
-  documentTextOutline,
-  logoSass,
-  checkmarkCircleOutline,
+  cubeOutline,                
+  documentTextOutline,        
+  logoSass,                   
+  alertCircleOutline,         
+  flashOutline,               
+  bugOutline,                 
+  gitBranchOutline,          
+  sparklesOutline,            
+  constructOutline,          
+  logoReact,                  
+  logoCss3,                   
   contrastOutline,
   sunnyOutline,
   arrowForwardOutline,
-  logoReact,
-  logoCss3,
 } from 'ionicons/icons';
 
 // Register Ionicons
 addIcons({
-  'construct-outline': constructOutline,
   'cube-outline': cubeOutline,
   'document-text-outline': documentTextOutline,
   'logo-sass': logoSass,
-  'checkmark-circle-outline': checkmarkCircleOutline,
+  'alert-circle-outline': alertCircleOutline,
+  'flash-outline': flashOutline,
+  'bug-outline': bugOutline,
+  'git-branch-outline': gitBranchOutline,
+  'sparkles-outline': sparklesOutline,
+  'construct-outline': constructOutline,
+  'logo-react': logoReact,
+  'logo-css3': logoCss3,
   'contrast-outline': contrastOutline,
   'sunny-outline': sunnyOutline,
   'arrow-forward-outline': arrowForwardOutline,
-  'logo-react': logoReact,
-  'logo-css3': logoCss3,
 });
+
 
 // Load tools
 function loadTools(): Tool[] {

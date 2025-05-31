@@ -24,35 +24,35 @@
     "name": "ESLint",
     "category": "Linter",
     "description": "Find and fix problems in your JavaScript code. ESLint statically analyzes your code to quickly find problems.",
-    "icon": "checkmark-circle-outline",
+    "icon":  "alert-circle-outline",
     "link": "https://eslint.org/docs/latest/"
   },
   {
     "name": "Babel",
     "description": "A JavaScript compiler that lets you use next generation JavaScript",
     "category": "Build Tools",
-    "icon": "checkmark-circle-outline",
+    "icon": "flash-outline",
     "link": "https://babeljs.io/"
   },
   {
     "name": "Jest",
     "description": "A delightful JavaScript testing framework with a focus on simplicity",
     "category": "Testing",
-    "icon": "checkmark-circle-outline",
+    "icon": "bug-outline",
     "link": "https://jestjs.io/"
   },
   {
     "name": "Husky",
     "description": "Modern native git hooks made easy",
     "category": "Git Hooks",
-    "icon": "checkmark-circle-outline",
+    "icon": "git-branch-outline",
     "link": "https://typicode.github.io/husky/"
   },
   {
     "name": "Prettier",
     "description": "An opinionated code formatter that supports many languages",
     "category": "Code Quality",
-    "icon": "checkmark-circle-outline",
+    "icon": "sparkles-outline",
     "link": "https://prettier.io/"
   },
   {
