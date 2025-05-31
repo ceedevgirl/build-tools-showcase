@@ -52,7 +52,7 @@ body {
 .header-left {
   gap: 1rem;
   display: flex;
-  align-items: center
+  align-items: center;
 }
 
 .logo {
@@ -162,6 +162,22 @@ body {
 
   &.eslint {
     background: linear-gradient(135deg, #4b32c3, #2d1b69);
+  }
+
+  &.vite {
+    background: linear-gradient(135deg, #ffb92e, #ff7262);
+  }
+
+  &.prettier {
+    background: linear-gradient(135deg, #f7b93e, #b07aa1);
+  }
+
+  &.babel {
+    background: linear-gradient(135deg, #f9dc3f, #ff8c00);
+  }
+
+  &.react {
+    background: linear-gradient(135deg, #61dafb, #007acc);
   }
 }
 
