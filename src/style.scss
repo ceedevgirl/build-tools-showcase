@@ -80,7 +80,7 @@ body {
 }
 
 .theme-toggle {
-  gap: 0.5rem;
+  gap: 0.2rem;
   padding: 0.5rem 1rem;
   background: $white-transparent-1;
   border: 1px solid $white-transparent-2;
@@ -89,6 +89,8 @@ body {
   cursor: pointer;
   transition: all 0.2s ease;
   font-size: 0.875rem;
+  align-items: center;
+  display: inline-flex;
 
   &:hover {
     background: rgba(255, 255, 255, 0.2);
