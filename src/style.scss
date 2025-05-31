@@ -112,7 +112,7 @@ body {
 /* Tool Grid */
 .tool-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
 }
 
@@ -164,20 +164,32 @@ body {
     background: linear-gradient(135deg, #4b32c3, #2d1b69);
   }
 
-  &.vite {
-    background: linear-gradient(135deg, #ffb92e, #ff7262);
+  &.babel {
+    background: linear-gradient(135deg, #f4dc3a, #ffb300);
+  }
+
+  &.jest {
+    background: linear-gradient(135deg, #99425b, #bb6688);
+  }
+
+  &.husky {
+    background: linear-gradient(135deg, #5c6bc0, #3949ab);
   }
 
   &.prettier {
-    background: linear-gradient(135deg, #f7b93e, #b07aa1);
+    background: linear-gradient(135deg, #f7b93e, #f77f00);
   }
 
-  &.babel {
-    background: linear-gradient(135deg, #f9dc3f, #ff8c00);
+  &.vite {
+    background: linear-gradient(135deg, #bd34fe, #41d1ff);
   }
 
   &.react {
     background: linear-gradient(135deg, #61dafb, #007acc);
+  }
+
+  &.tailwind {
+    background: linear-gradient(135deg, #38b2ac, #319795);
   }
 }
 
