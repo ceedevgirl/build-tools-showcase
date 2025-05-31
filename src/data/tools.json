@@ -10,7 +10,7 @@
     "name": "TypeScript",
     "category": "Language",
     "description": "A typed superset of JavaScript that compiles to plain JavaScript.",
-    "icon": "logo-typescript",
+    "icon": "document-text-outline",
     "link": "https://www.typescriptlang.org/docs/"
   },
   {
@@ -54,5 +54,26 @@
     "category": "Code Quality",
     "icon": "checkmark-circle-outline",
     "link": "https://prettier.io/"
+  },
+  {
+    "name": "Vite",
+    "category": "Build Tools",
+    "description": "A next-generation frontend tooling that provides a faster and leaner development experience.",
+    "icon": "construct-outline",
+    "link": "https://vitejs.dev/"
+  },
+  {
+    "name": "React",
+    "category": "Framework",
+    "description": "A JavaScript library for building user interfaces, particularly single-page applications.",
+    "icon": "logo-react",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "name": "Tailwind CSS",
+    "category": "CSS Framework",
+    "description": "A utility-first CSS framework for rapidly building custom user interfaces.",
+    "icon": "logo-css3",
+    "link": "https://tailwindcss.com/"
   }
 ]

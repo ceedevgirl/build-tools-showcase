@@ -6,4 +6,3 @@ export interface Tool {
   link: string;
 }
 
-// export type SortOption = 'name' | 'category';
