@@ -4,20 +4,21 @@ import { Tool } from './model/types';
 import '@ionic/core';
 import { addIcons } from 'ionicons';
 import {
-  cubeOutline,                
-  documentTextOutline,        
-  logoSass,                   
-  alertCircleOutline,         
-  flashOutline,               
-  bugOutline,                 
-  gitBranchOutline,          
-  sparklesOutline,            
-  constructOutline,          
-  logoReact,                  
-  logoCss3,                   
+  cubeOutline,
+  documentTextOutline,
+  logoSass,
+  alertCircleOutline,
+  flashOutline,
+  bugOutline,
+  gitBranchOutline,
+  sparklesOutline,
+  constructOutline,
+  logoReact,
+  logoCss3,
   contrastOutline,
   sunnyOutline,
   arrowForwardOutline,
+  logoNodejs,
 } from 'ionicons/icons';
 
 // Register Ionicons
@@ -36,8 +37,8 @@ addIcons({
   'contrast-outline': contrastOutline,
   'sunny-outline': sunnyOutline,
   'arrow-forward-outline': arrowForwardOutline,
+  'logo-nodejs': logoNodejs,
 });
-
 
 // Load tools
 function loadTools(): Tool[] {
@@ -86,11 +87,13 @@ function initializeThemeToggle(): void {
     themeToggle.addEventListener('click', () => {
       isDark = !isDark;
       if (isDark) {
-        document.body.style.background = 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)';
+        document.body.style.background =
+          'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)';
         icon.setAttribute('name', 'sunny-outline');
         text.textContent = 'Dark Mode';
       } else {
-        document.body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        document.body.style.background =
+          'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
         icon.setAttribute('name', 'contrast-outline');
         text.textContent = 'Light Mode';
       }
